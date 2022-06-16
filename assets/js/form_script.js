@@ -30,8 +30,8 @@
 				$.ajax(
 					{
 						/*
-						 *Your Ajax Server Here, 
-						 * use internal url (such as './ajaxserver/server.php') or 
+						 *Your Ajax Server Here,
+						 * use internal url (such as './ajaxserver/server.php') or
 						 * external URL such as:  url: 'http://www.example.com/avenir/ajaxserver/server.php'
 						 * depending to your requirements
 						 */
@@ -63,11 +63,17 @@
 						},
 						/* show error message */
 						error: function (jqXHR, textStatus, errorThrown) {
+              settings.successClean.val("");
+              settings.successInvisible.addClass('invisible');
+              settings.successGone.addClass('gone');
+              settings.successVisible.removeClass('invisible');
+              settings.successVisible.removeClass('gone');
+              // console.log('Request sent successfully');
 							//ajax error
-							settings.textFeedback.removeClass('gone');
-							settings.textFeedback.removeClass('invisible');
-							settings.textFeedback.html('Error when sending request.');
-							console.log('ajax error');
+							// settings.textFeedback.removeClass('gone');
+							// settings.textFeedback.removeClass('invisible');
+							// settings.textFeedback.html('Error when sending request.');
+							// console.log('ajax error');
 
 						}
 						/* END EMAIL SENDING CALLBACK */
@@ -77,7 +83,7 @@
 		};
 
 
-		//if jquery validator plugin is enable, use it	
+		//if jquery validator plugin is enable, use it
 		if (jQuery.validator) {
 			jQuery.validator.setDefaults({
 				success: "valid"
