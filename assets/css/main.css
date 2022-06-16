@@ -2720,6 +2720,39 @@ textarea {
     transform: translateX(-50%);
 }
 
+#tokenomics-chart {
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+}
+
+@media (max-width: 767px) {
+    #tokenomics-chart {
+        height: 250px;
+    }
+}
+
+.tokenomics-chart {
+    position: relative;
+}
+
+.tokenomics-chart .hidden-trial {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 12px;
+    background-color: #000000;
+    border-radius: 0;
+}
+
+.tokenomics-chart .hidden-trial.left {
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: auto;
+}
+
 .iframe-swap {
     margin-top: -65px;
 }

@@ -78,7 +78,7 @@
                     <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#chart">Chart & Swap</a>
+                    <a class="nav-link" href="#unstableswap">UnstableSwap</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
@@ -88,6 +88,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#roadmap">Roadmap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tokenomics">Tokenomics</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#subscribe">Subscribe</a>
@@ -103,9 +106,9 @@
                     </a>
                 </li>
                 <li class="nav-item" data-menuanchor="chart">
-                    <a href="#chart">
-                        <i class="icon fa fa-line-chart" style="font-size: 15px"></i>
-                        <span class="txt">Chart & Swap</span>
+                    <a href="#unstableswap">
+                        <i class="icon fa fa-exchange" style="font-size: 15px"></i>
+                        <span class="txt">UnstableSwap</span>
                     </a>
                 </li>
                 <li class="nav-item" data-menuanchor="roadmap">
@@ -139,18 +142,19 @@
                         <div class="title-desc">
                             <h1 class="display-4 display-title home-title anim-1">Unstable Inu</h1>
                             <p class="anim-2 home-desc">Unstable Inu is a community-driven cryptocurrency meme on Binance Smart Chain. We will develop many functions on our platform.</p>
+                            <p style="font-size: 16px; color: #faa428">Smart Contract: 0xf26a10c522cB3823e381BDe39BfAe82cE3c96AD9</p>
                         </div>
                         <div class="btns-action anim-4">
-                            <a class="btn" href="#">
+                            <a class="btn" href="https://pancakeswap.finance/swap?outputCurrency=0xf26a10c522cB3823e381BDe39BfAe82cE3c96AD9" target="_blank">
                                 <span class="txt">Buy on pancakeswap</span>
                             </a>
-                            <a class="btn" href="#">
+                            <a class="btn" href="https://poocoin.app/tokens/0xf26a10c522cb3823e381bde39bfae82ce3c96ad9" target="_blank">
                                 <span class="txt">Chart on poocoin</span>
                             </a>
                         </div>
                         <div class="btns-action anim-3">
-                            <a class="btn btn-underline btn-primary" href="#chart">
-                                <span class="text">Chart & Swap</span>
+                            <a class="btn btn-underline btn-primary" href="#unstableswap">
+                                <span class="text">UnstableSwap</span>
                             </a>
                         </div>
                     </div>
@@ -167,7 +171,7 @@
         </div>
     </div>
 
-    <div class="section section-list-feature fp-auto-height-responsive anim" data-section="chart" data-anchor="chart">
+    <div class="section section-list-feature fp-auto-height-responsive anim" data-section="unstableswap" data-anchor="unstableswap">
         <div class="section-wrapper fullwidth with-margin margin-topbottom">
             <div class="section-content anim">
                 <div class="row">
@@ -175,7 +179,7 @@
                         <div class="wrapper">
                             <div class="title-desc">
                                 <h1 class="display-4 display-title anim-1 mb-4">
-                                    Chart & Swap
+                                    UnstableSwap
                                 </h1>
                                 <p class="anim-2">The chart displays the BNB price temporarily until Unstable Inu becomes available for the public sale.</p>
                             </div>
@@ -187,7 +191,7 @@
                         <div class="wrapper">
                             <div style="height: 500px">
                                 <chart-embed
-                                        address="0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+                                        address="0xf26a10c522cB3823e381BDe39BfAe82cE3c96AD9"
                                         chain="bsc"
                                         charttype="candles"
                                         theme="dark"
@@ -205,7 +209,7 @@
                                     height="450"
                                     title="Flooz Trade"
                                     frameborder="0"
-                                    src="https://www.flooz.trade/embedded/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/?backgroundColor=transparent&chainId=56">
+                                    src="https://www.flooz.trade/embedded/0xf26a10c522cB3823e381BDe39BfAe82cE3c96AD9/?backgroundColor=transparent&chainId=56">
                             </iframe>
                         </div>
                     </div>
@@ -511,6 +515,56 @@
         </div>
     </div>
 
+    <div class="section section-register fp-auto-height-responsive anim section-anim" data-section="tokenomics" data-anchor="tokenomics">
+        <div class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom">
+            <div class="section-content fullwidth anim">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-desc text-center">
+                            <h2 class="display-4 display-title anim-2">Tokenomics</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-7">
+                        <div class="form-desc text-center">
+                            <p class="invite anim-3">Total Supply</p>
+                            <h3 class="invite anim-3 italic" style="color: #a3ef70">
+                                <b>2,000,000</b>
+                            </h3>
+                        </div>
+                        <div class="anim-4 tokenomics-chart">
+                            <div id="tokenomics-chart"></div>
+                            <div class="hidden-trial left"></div>
+                            <div class="hidden-trial"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-5">
+                        <div class="form-desc text-center">
+                            <p class="invite anim-3">Tax Allocation</p>
+                            <h3 class="invite anim-3 italic" style="color: #a3ef70">
+                                <b>10% Buy/Sell</b>
+                            </h3>
+                        </div>
+                        <div class="anim-4 mt-3">
+                            <div class="border border-secondary mb-3 p-4 shadow-lg shadow">
+                                <h5>5% Liquidity</h5>
+                            </div>
+                            <div class="border border-secondary mb-3 p-4 shadow-lg shadow">
+                                <h5>5% Marketing</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section-footer scrolldown">
+            <a class="up">
+                <span class="icon up"></span>
+            </a>
+        </footer>
+    </div>
+
     <div class="section section-register fp-auto-height-responsive anim section-anim" data-section="subscribe" data-anchor="subscribe">
         <div class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom">
             <div class="section-content fullwidth anim">
@@ -590,6 +644,8 @@
 <script src="./assets/js/scrolloverflow.min.js"></script>
 <script src="./assets/js/all.js"></script>
 <script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/canvasjs.js"></script>
+<script src="./assets/js/cavanchart.js"></script>
 <script src="./assets/js/form_script.js"></script>
 <script src="./assets/js/main.js"></script>
 <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>
