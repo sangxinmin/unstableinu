@@ -16,8 +16,8 @@ window.onload = function () {
       toolTipContent: "{name}: <strong>{y}%</strong>",
       indexLabel: "{name} - {y}%",
       dataPoints: [
-        { y: 40, name: "Liquidity", indexLabelFontSize: 16, indexLabelFontWeight: "bold", indexLabelLineThickness: 3, exploded: true, color: "#f5eb26" },
-        { y: 60, name: "Private", indexLabelFontSize: 16, indexLabelFontWeight: "bold", indexLabelLineThickness: 3, exploded: true, color: "#78e711" }
+        { y: 40, name: "Liquidity", indexLabelFontSize: 16, indexLabelFontWeight: "bold", indexLabelLineThickness: 3, exploded: true, color: "#78e711" },
+        { y: 60, name: "Private", indexLabelFontSize: 16, indexLabelFontWeight: "bold", indexLabelLineThickness: 3, exploded: true, color: "#be1c65" }
       ]
     }]
   });
