@@ -2720,6 +2720,16 @@ textarea {
     transform: translateX(-50%);
 }
 
+.iframe-swap {
+    margin-top: -65px;
+}
+
+@media screen and (max-width: 767px) {
+    .iframe-swap {
+        margin-left: -30px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
   #fp-nav {
     visibility: hidden; } }
